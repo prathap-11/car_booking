@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial</title>
+</head>
+<body>
+    <h1>Objects View</h1>
+
+    
+    {% for car_item in cars %}
+        <ul>Car List</ul>
+        
+        
+        <li>{{ car_item.carimage }}</li>
+        <li>{{ car_item.carname }}</li>
+        <li>{{ car_item.carrent }}</li>
+        <li>{{ car_item.carpdf }}</li>
+
+    {% endfor %}
+</body>
+</html>
